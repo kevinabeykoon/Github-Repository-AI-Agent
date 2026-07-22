@@ -3,16 +3,14 @@
   <a href="https://www.youtube.com/watch?v=LUFkL5DFWEE" target="_blank" rel="noopener noreferrer">
   <img width="800" height="450" alt="github Agent" src="https://github.com/user-attachments/assets/4d7fa67c-e544-4aaa-ba85-3c22f002b0e8"/>
 </a>
-  <br />
+  <br />  <br />
 An AI powered repository analysis tool that injects repositories and answers natural language questions. Instead of manually searching through files, simply provide a GitHub repository URL and ask questions about the codebase.
 
----
 
-## Overview
+## Overview & Demo
+__Demo:__ Please click the GIF above or follow this hyperlink  <a href="https://www.youtube.com/watch?v=LUFkL5DFWEE">https://www.youtube.com/watch?v=LUFkL5DFWEE</a>
 
-Understanding a new codebase can be time-consuming. This project simplifies that process by transforming any GitHub repository into an AI-powered conversational assistant.
-
-The application clones a repository, processes its source code, generates vector embeddings, and retrieves the most relevant code before sending it to a language model for response generation.
+Understanding a new codebase can be time-consuming. This project simplifies that process by transforming any GitHub repository into an AI-powered conversational assistant. The application clones a repository, processes its source code, generates vector embeddings, and retrieves the most relevant code before sending it to a language model for response generation.
 
 The result is an interactive developer tool capable of explaining:
 
@@ -23,7 +21,7 @@ The result is an interactive developer tool capable of explaining:
 ⭐ Repository-specific questions  
 
 
----
+
 
 ## How It Works
 
@@ -37,13 +35,12 @@ After a GitHub repository URL is submitted, the backend:
 - Scans the project files
 - Parses the source code
 - Splits large files into smaller chunks for efficient processing
-
+  <br /><br />
 ### 2. Embedding Generation
 
-Each code chunk is converted into a vector embedding using OpenAI embeddings.
-
+Each code chunk is converted into a vector embedding using OpenAI embeddings.  
 These embeddings allow the application to perform semantic search rather than relying on keyword matching.
-
+<br /><br />
 ### 3. Semantic Retrieval
 
 When a user asks a question:
@@ -53,11 +50,10 @@ When a user asks a question:
 3. The most relevant code snippets are retrieved.
 4. Those snippets are injected into the AI prompt.
 
+
 ### 4. AI Response Generation
 
 The language model generates an answer grounded in the retrieved repository context, allowing it to provide accurate explanations about the codebase.
-
----
 
 ## Features
 
@@ -69,9 +65,8 @@ The language model generates an answer grounded in the retrieved repository cont
 - Explain architecture, functionality, and implementation details
 - Retrieval-Augmented Generation (RAG) pipeline
 
----
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -99,13 +94,12 @@ Rather than simply integrating an AI API, this project focuses on the engineerin
 - Context-aware prompting
 - Retrieval-Augmented Generation (RAG)
 
----
-
 ## Workflow
 
 <img width="1087" height="384" alt="githubimage2png" src="https://github.com/user-attachments/assets/1409db8b-be64-41a6-96b3-c359e9fdb150" />
 
----
+This the flow of the program, both behind-the-scenes and trigger actions with the user.
+
 
 ## Use Cases
 
